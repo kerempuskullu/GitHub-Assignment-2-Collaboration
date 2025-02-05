@@ -38,16 +38,16 @@ public class Main{
             choice = sc.nextInt();
             switch(choice){
                 case 1:
-                    findMax();
+                    ArrayMethods.findMax();
                     break;
                 case 2:
-                    findMin();
+                    ArrayMethods.findMin();
                     break;
                 case 3:
-                    differenceFromAverage();
+                    ArrayMethods.differenceFromAverage();
                     break;
                 case 4:
-                    sumOfOddandEvenElements();
+                    ArrayMethods.sumOfOddandEvenElements();
                     break;
             }
         } while (choice != 5);
