@@ -14,7 +14,7 @@ public class ArrayMethods {
         for(int i=0; i<intArray.length; i++){
             minn = Math.min(minn, intArray[i]);
         }
-        return minn;
+        return minn; //ewqeqwewqwqewewqe
     }
 
     //Finds the avarage of teh array and displays how much each element differs from the avarage
