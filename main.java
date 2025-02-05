@@ -44,10 +44,15 @@ public class Main{
                     ArrayMethods.findMin();
                     break;
                 case 3:
-                    ArrayMethods.differenceFromAverage();
+                    System.out.print("The differences from averages are: ");
+                    double[] diffsFromAverage = ArrayMethods.differencesFromAverage();
+                    for (int i = 0; i < diffsFromAverage; i++) {
+                        print(diffsFromAverage[i] + " ");
+                    }
                     break;
                 case 4:
-                    ArrayMethods.sumOfOddandEvenElements();
+                    System.out.println("Sum of odd indexed elements are :" + ArrayMethods.sumOfOddIndexedElements());
+                    System.out.println("Sum of even indexed elements are :" + ArrayMethods.sumOfEvenIndexedElements());
                     break;
             }
         } while (choice != 5);
