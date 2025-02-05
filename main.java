@@ -13,10 +13,13 @@ public class main{
         int arraySize = sc.nextInt();
         array = new int[arraySize];
 
+        System.out.print("Your randomly generated array is: ");
         Random random = new Random();
         for(int i = 0; i < array.length; i++){
             array[i] = random.nextInt(101);
+            System.out.print(array[i] + ", ");
         }
+        System.out.println();
     }
 
     //prints out the menu
@@ -38,9 +41,11 @@ public class main{
             choice = sc.nextInt();
             switch(choice){
                 case 1:
+                System.out.print("Maximum element of the array is: ");
                     System.out.println(ArrayMethods.findMax(array));
                     break;
                 case 2:
+                    System.out.print("Minumum element of the array is: ");
                     System.out.println(ArrayMethods.findMin(array));
                     break;
                 case 3:
@@ -49,6 +54,7 @@ public class main{
                     for (int i = 0; i < diffsFromAverage.length; i++) {
                         System.out.print(diffsFromAverage[i] + " ");
                     }
+                    System.out.println();
                     break;
                 case 4:
                     System.out.println("Sum of odd indexed elements are :" + ArrayMethods.sumOfOddIndexedElements(array));
