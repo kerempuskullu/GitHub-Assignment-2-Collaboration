@@ -10,7 +10,7 @@ public class ArrayMethods {
     }
 
     //Finds the avarage of teh array and displays how much each element differs from the avarage
-    public static double[] differencesFromAvarage(int[] intArray){
+    public static double[] differencesFromAverage(int[] intArray){
         double average = 0;
         for (int i=0; i<intArray.length; i++) {
             average += intArray[i];
