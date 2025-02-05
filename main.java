@@ -52,7 +52,7 @@ public class main{
                     System.out.print("The differences from averages are: ");
                     double[] diffsFromAverage = ArrayMethods.differencesFromAverage(array);
                     for (int i = 0; i < diffsFromAverage.length; i++) {
-                        System.out.printf("%.3d ");
+                        System.out.printf("%.3f ", diffsFromAverage[i]);
                     }
                     System.out.println();
                     break;
