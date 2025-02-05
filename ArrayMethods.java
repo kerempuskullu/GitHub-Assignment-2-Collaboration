@@ -1,12 +1,20 @@
 public class ArrayMethods {
-    //Finds teh maximum value throughout the array
-    public static void findMax(){
-
+    //Finds the maximum value throughout the array
+    public static int findMax(int[] intArray){
+        int maxx = 0;
+        for(int i = 0; i<intArray.length; i++){
+            maxx = Math.max(maxx, intArray[i]);
+        }
+        return maxx;
     }
 
     //Finds the minimum value throughout the array
-    public static void findMin(){
-
+    public static int findMin(int[] intArray){
+        int minn = Integer.MAX_VALUE;
+        for(int i=0; i<intArray.length; i++){
+            minn = Math.min(minn, intArray[i]);
+        }
+        return minn;
     }
 
     //Finds the avarage of teh array and displays how much each element differs from the avarage
