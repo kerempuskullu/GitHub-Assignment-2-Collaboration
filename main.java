@@ -57,8 +57,8 @@ public class main{
                     System.out.println();
                     break;
                 case 4:
-                    System.out.println("Sum of odd indexed elements are :" + ArrayMethods.sumOfOddIndexedElements(array));
-                    System.out.println("Sum of even indexed elements are :" + ArrayMethods.sumOfEvenIndexedElements(array));
+                    System.out.println("Sum of odd indexed elements are : " + ArrayMethods.sumOfOddIndexedElements(array));
+                    System.out.println("Sum of even indexed elements are : " + ArrayMethods.sumOfEvenIndexedElements(array));
                     break;
             }
         } while (choice != 5);
