@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main{
+public class main{
 
     public static Scanner sc = new Scanner(System.in);
     public static int[] array;
@@ -38,10 +38,10 @@ public class Main{
             choice = sc.nextInt();
             switch(choice){
                 case 1:
-                    ArrayMethods.findMax();
+                    System.out.println(ArrayMethods.findMax(array));
                     break;
                 case 2:
-                    ArrayMethods.findMin();
+                    System.out.println(ArrayMethods.findMin(array));
                     break;
                 case 3:
                     ArrayMethods.differenceFromAverage();
