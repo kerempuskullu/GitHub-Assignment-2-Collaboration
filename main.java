@@ -62,14 +62,11 @@ public class main{
                     break;
             }
         } while (choice != 5);
-        
     }
 
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) { 
         initializeProgram();
-        run();
-        
+        run(); 
     }
 
 }
