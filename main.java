@@ -45,14 +45,14 @@ public class main{
                     break;
                 case 3:
                     System.out.print("The differences from averages are: ");
-                    double[] diffsFromAverage = ArrayMethods.differencesFromAverage();
-                    for (int i = 0; i < diffsFromAverage; i++) {
-                        print(diffsFromAverage[i] + " ");
+                    double[] diffsFromAverage = ArrayMethods.differencesFromAverage(array);
+                    for (int i = 0; i < diffsFromAverage.length; i++) {
+                        System.out.print(diffsFromAverage[i] + " ");
                     }
                     break;
                 case 4:
-                    System.out.println("Sum of odd indexed elements are :" + ArrayMethods.sumOfOddIndexedElements());
-                    System.out.println("Sum of even indexed elements are :" + ArrayMethods.sumOfEvenIndexedElements());
+                    System.out.println("Sum of odd indexed elements are :" + ArrayMethods.sumOfOddIndexedElements(array));
+                    System.out.println("Sum of even indexed elements are :" + ArrayMethods.sumOfEvenIndexedElements(array));
                     break;
             }
         } while (choice != 5);
