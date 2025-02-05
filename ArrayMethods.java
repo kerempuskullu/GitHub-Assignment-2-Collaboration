@@ -10,12 +10,33 @@ public class ArrayMethods {
     }
 
     //Finds the avarage of teh array and displays how much each element differs from the avarage
-    public static void differenceFromAvarage(){
-
+    public static double[] differencesFromAvarage(int[] intArray){
+        double average = 0;
+        for (int i=0; i<intArray.length; i++) {
+            average += intArray[i];
+        }
+        average = average/intArray.length;
+        double[] outputArray = new double[intArray.length];
+        for (int i=0; i<intArray.length; i++) {
+            outputArray[i] = intArray[i] - average;
+        }
+        return outputArray;
     }
 
     //Calcuates the sum of od and even indexed elements
-    public static void sumOfOddandEvenElements(){
+    public static int sumOfOddIndexedElements(int[] intArray){
+        int output = 0;
+        for (int i=1; i<intArray.length; i+=2) {
+            output += intArray[i];
+        }
+        return output;
+    }
 
+    public static int sumOfEvenIndexedElements(int[] intArray){
+        int output = 0;
+        for (int i=0; i<intArray.length; i+=2) {
+            output += intArray[i];
+        }
+        return output;
     }
 }
